@@ -18,6 +18,9 @@
 		91B1C4C3278CD150005A459C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1C4C2278CD150005A459C /* NetworkManager.swift */; };
 		91B1C4C5278CD1CC005A459C /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1C4C4278CD1CC005A459C /* LaunchViewModel.swift */; };
 		91B1C4CA278CD74D005A459C /* LaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1C4C9278CD74D005A459C /* LaunchModel.swift */; };
+		91B1C4CC278CD8E5005A459C /* LaunchCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1C4CB278CD8E5005A459C /* LaunchCard.swift */; };
+		91B1C4CE278CD9CC005A459C /* LoadFromFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1C4CD278CD9CC005A459C /* LoadFromFile.swift */; };
+		91B1C4D1278CDADF005A459C /* launchData.json in Resources */ = {isa = PBXBuildFile; fileRef = 91B1C4D0278CDADF005A459C /* launchData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		91B1C4C2278CD150005A459C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		91B1C4C4278CD1CC005A459C /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
 		91B1C4C9278CD74D005A459C /* LaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModel.swift; sourceTree = "<group>"; };
+		91B1C4CB278CD8E5005A459C /* LaunchCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCard.swift; sourceTree = "<group>"; };
+		91B1C4CD278CD9CC005A459C /* LoadFromFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFromFile.swift; sourceTree = "<group>"; };
+		91B1C4D0278CDADF005A459C /* launchData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = launchData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +73,14 @@
 			children = (
 				91B1C4C0278CCFFC005A459C /* API.swift */,
 				91B1C4BB278CC9A6005A459C /* schema.json */,
+				91B1C4D0278CDADF005A459C /* launchData.json */,
 				91B1C4AA278CC213005A459C /* Apollo_GraphQLApp.swift */,
 				91B1C4C2278CD150005A459C /* NetworkManager.swift */,
 				91B1C4AC278CC213005A459C /* ContentView.swift */,
 				91B1C4C8278CD71C005A459C /* ViewModels */,
 				91B1C4C7278CD70E005A459C /* Views */,
 				91B1C4C6278CD704005A459C /* Model */,
+				91B1C4CF278CDAAF005A459C /* Helpers */,
 				91B1C4AE278CC214005A459C /* Assets.xcassets */,
 				91B1C4B0278CC214005A459C /* Preview Content */,
 				91B1C4BD278CC9F8005A459C /* LaunchList.graphql */,
@@ -99,6 +107,7 @@
 		91B1C4C7278CD70E005A459C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				91B1C4CB278CD8E5005A459C /* LaunchCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -109,6 +118,14 @@
 				91B1C4C4278CD1CC005A459C /* LaunchViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		91B1C4CF278CDAAF005A459C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				91B1C4CD278CD9CC005A459C /* LoadFromFile.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B1C4D1278CDADF005A459C /* launchData.json in Resources */,
 				91B1C4B2278CC214005A459C /* Preview Assets.xcassets in Resources */,
 				91B1C4BC278CC9A6005A459C /* schema.json in Resources */,
 				91B1C4BE278CC9F8005A459C /* LaunchList.graphql in Resources */,
@@ -212,11 +230,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				91B1C4CA278CD74D005A459C /* LaunchModel.swift in Sources */,
+				91B1C4CE278CD9CC005A459C /* LoadFromFile.swift in Sources */,
 				91B1C4C3278CD150005A459C /* NetworkManager.swift in Sources */,
 				91B1C4AD278CC213005A459C /* ContentView.swift in Sources */,
 				91B1C4C1278CCFFC005A459C /* API.swift in Sources */,
 				91B1C4C5278CD1CC005A459C /* LaunchViewModel.swift in Sources */,
 				91B1C4AB278CC213005A459C /* Apollo_GraphQLApp.swift in Sources */,
+				91B1C4CC278CD8E5005A459C /* LaunchCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
